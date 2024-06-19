@@ -28,7 +28,7 @@ public class UploadDownloadExample
     //Get the column number of the Price Column
     //Get the row number of the price of Apple row
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException, InterruptedException {
 
 
         WebDriver driver = new ChromeDriver();
@@ -38,9 +38,12 @@ public class UploadDownloadExample
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         WebElement downloadButton = driver.findElement(By.xpath("//button[@id='downloadButton']"));
         downloadButton.click();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+        //driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+
+        Thread.sleep(5000);
+
         String fruitName= "Apple";
-        String fileName = "C:\\Users\\Arun\\Downloads\\download.xlsx";
+         String fileName = System.getProperty("user.home")+"\\Downloads\\download.xlsx";
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 
         File file =  new File(fileName);
@@ -62,7 +65,6 @@ public class UploadDownloadExample
         String expectedMsg = "Updated Excel Data Successfully.";
         Assert.assertEquals(actualValidationMsg,expectedMsg);
         wait.until(ExpectedConditions.invisibilityOfElementLocated(validationMsg));
-        driver.navigate().refresh();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         String priceColumn = driver.findElement(By.xpath("//div[text()='Price']")).getAttribute("data-column-id");
         String actualPrice = driver.findElement(By.xpath("//div[text()='"+fruitName+"' ]/parent::div/parent::div/div[@id='cell-"+priceColumn+"-undefined']")).getText();
