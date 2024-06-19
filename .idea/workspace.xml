@@ -4,17 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="570a5355-f61e-4d65-a95f-75a0851fd7b3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/data/dataSheet.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/DataProviderClass.java" afterDir="false" />
+    <list default="true" id="570a5355-f61e-4d65-a95f-75a0851fd7b3" name="Changes" comment="New Excel Data reading method we've created separate project for that">
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/UploadDownloadExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/DataProviderClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/DataProviderClass.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,9 +24,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2hzJp9ZrItynqh87Kpgqi4unMmJ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -45,6 +38,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.UploadDownloadExample.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "TestNG.DataProviderClass.firsTest.executor": "Run",
@@ -59,7 +53,20 @@
       <recent name="C:\Users\Arun\IdeaProjects\SeleniumDataProviderExcelIntegration\src\test\java\data" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.UploadDownloadExample">
+    <configuration name="UploadDownloadExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="tests.UploadDownloadExample" />
+      <module name="SeleniumDataProviderExcelIntegration" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DataProviderClass.firsTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumDataProviderExcelIntegration" />
       <option name="PACKAGE_NAME" value="" />
@@ -74,6 +81,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.UploadDownloadExample" />
         <item itemvalue="TestNG.DataProviderClass.firsTest" />
       </list>
     </recent_temporary>
@@ -87,9 +95,20 @@
       <option name="presentableId" value="Default" />
       <updated>1718591152987</updated>
     </task>
+    <task id="LOCAL-00001" summary="New Excel Data reading method we've created separate project for that">
+      <option name="closed" value="true" />
+      <created>1718602221055</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1718602221055</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="New Excel Data reading method we've created separate project for that" />
+    <option name="LAST_COMMIT_MESSAGE" value="New Excel Data reading method we've created separate project for that" />
   </component>
 </project>
